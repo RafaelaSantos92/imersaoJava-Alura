@@ -32,7 +32,7 @@ public class geradoraDeFigurinhas {
         graphics.setFont(fonte);
 
         //escrever uma frase na nova imagem
-        graphics.drawString("Nunca vi ", 210, novaAltura - 100);
+        graphics.drawString("Muito bom!", 210, novaAltura - 100);
 
         //escrever a nova imagem em um arquivo 
         ImageIO.write(novaImagem, "png", new File(nomeArquivo));
