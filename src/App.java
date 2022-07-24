@@ -34,7 +34,7 @@ public class App {
              String urlImagem = filme.get("image");
              String titulo = filme.get("title");
              InputStream inputStream = new URL(urlImagem).openStream();
-             String nomeArquivo = titulo + ".png";
+             String nomeArquivo = "saida/" + titulo + ".png";
              var geradora = new geradoraDeFigurinhas();
              geradora.cria(inputStream, nomeArquivo);
              System.out.println(titulo);
